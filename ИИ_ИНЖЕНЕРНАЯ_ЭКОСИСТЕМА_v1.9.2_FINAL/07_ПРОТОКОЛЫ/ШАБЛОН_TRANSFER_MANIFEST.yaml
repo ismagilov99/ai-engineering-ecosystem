@@ -1,0 +1,21 @@
+transfer_id: "TR-YYYYMMDD-001"
+transfer_type: PROJECT # SESSION | PROJECT | SYSTEM | ROLE | REVIEW | KNOWLEDGE | OTHER
+sender_role: ""
+sender_prompt_version: ""
+recipient_role_or_model: "UNKNOWN"
+transfer_depth: ADAPTIVE # QUICK | STANDARD | FULL | ADAPTIVE
+package_status: PREPARING # PREPARING | PARTIAL | READY_TO_SEND | SENT_BY_USER | RECEIVED_PARTIAL | RECEIVED_COMPLETE | VERIFIED | BLOCKED
+created_at: "YYYY-MM-DD"
+part_total: "TOTAL_TO_BE_DETERMINED"
+content_modules: []
+files:
+  - path: "relative/path/to/file"
+    role_adapter: ""
+    domain_adapter: ""
+    status: PREPARED # PREPARED | ISSUED | RECEIVED | READ | VERIFIED | MISSING | BLOCKED
+    size_bytes: null
+    sha256: null # Fill only after actually computing it
+required_external_attachments: []
+known_omissions: []
+next_action: ""
+integrity_status: NOT_COMPUTED # PASS | FAIL | NOT_COMPUTED | NOT_APPLICABLE
